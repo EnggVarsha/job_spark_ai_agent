@@ -1,0 +1,164 @@
+{
+  "project_name": "JobSpark",
+  "design_philosophy": {
+    "identity": "E1: The Anti-AI Designer",
+    "core_principles": [
+      "Fusion over Imitation: Professional Trust mixed with High-Energy Growth",
+      "Emotion First: Empowering, Precise, Intelligent",
+      "Content is King: Data visualization and clarity are paramount",
+      "Zoom In: Focus on essential career details",
+      "Negative Space: Generous breathing room for stressful tasks"
+    ],
+    "anti_patterns": [
+      "No Generic 'SaaS Blue' everywhere",
+      "No Center-Everything layouts",
+      "No Inter font for headings",
+      "No full-screen gradients"
+    ]
+  },
+  "typography": {
+    "font_family": {
+      "headings": "Plus Jakarta Sans, sans-serif",
+      "body": "DM Sans, sans-serif",
+      "mono": "JetBrains Mono, monospace",
+      "accent": "Outfit, sans-serif"
+    },
+    "scale": {
+      "h1": "text-5xl md:text-6xl font-bold tracking-tight leading-none",
+      "h2": "text-4xl md:text-5xl font-semibold tracking-tight",
+      "h3": "text-3xl font-semibold tracking-normal",
+      "h4": "text-2xl font-medium",
+      "body_lg": "text-lg leading-relaxed",
+      "body_base": "text-base leading-relaxed text-slate-600",
+      "caption": "text-sm text-slate-500 uppercase tracking-widest font-medium"
+    },
+    "imports": [
+      "@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@400;500;700&display=swap');"
+    ]
+  },
+  "colors": {
+    "palette_name": "Professional Spark (Modified Archetype 1 & 4)",
+    "mode": "light",
+    "background": {
+      "default": "#FFFFFF",
+      "paper": "#F8FAFC",
+      "subtle": "#F1F5F9",
+      "dark": "#0F172A"
+    },
+    "text": {
+      "primary": "#0F172A",
+      "secondary": "#64748B",
+      "muted": "#94A3B8",
+      "inverse": "#FFFFFF"
+    },
+    "brand": {
+      "primary": "#0F172A",
+      "accent": "#F97316",
+      "accent_hover": "#EA580C",
+      "success": "#10B981",
+      "warning": "#F59E0B",
+      "error": "#EF4444",
+      "info": "#3B82F6"
+    },
+    "gradients": {
+      "spark": "linear-gradient(135deg, #F97316 0%, #FB923C 100%)",
+      "subtle_mesh": "radial-gradient(at 0% 0%, rgba(249, 115, 22, 0.05) 0px, transparent 50%), radial-gradient(at 100% 100%, rgba(59, 130, 246, 0.05) 0px, transparent 50%)"
+    }
+  },
+  "layout_strategies": {
+    "global_spacing": "Generous. Use p-6, p-8, p-12. Avoid p-4 for main containers.",
+    "container_width": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "bento_grid": {
+      "type": "Mode B: High Density (For Dashboards)",
+      "classes": "grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6",
+      "rules": "Every pixel utilized. Use h-full on children."
+    },
+    "tetris_grid": {
+      "type": "Mode A: Asymmetric (For Landing/Marketing)",
+      "classes": "grid grid-cols-1 md:grid-cols-12 gap-8",
+      "rules": "Mix col-span-8 (Hero) with col-span-4 (Supporting). Leave breathing room."
+    },
+    "sidebar": {
+      "width": "w-64",
+      "style": "Fixed, border-r border-slate-200 bg-white/80 backdrop-blur-xl (Glassmorphism)"
+    }
+  },
+  "component_styles": {
+    "buttons": {
+      "primary": "bg-slate-900 text-white hover:bg-slate-800 rounded-xl px-6 py-3 font-medium transition-all shadow-lg shadow-slate-900/20 active:scale-95",
+      "accent": "bg-orange-500 text-white hover:bg-orange-600 rounded-xl px-6 py-3 font-medium transition-all shadow-lg shadow-orange-500/20 active:scale-95",
+      "ghost": "text-slate-600 hover:text-slate-900 hover:bg-slate-100 rounded-xl px-4 py-2 transition-colors",
+      "outline": "border-2 border-slate-200 text-slate-700 hover:border-slate-900 hover:text-slate-900 bg-transparent rounded-xl px-6 py-3 font-medium transition-all"
+    },
+    "cards": {
+      "base": "bg-white rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow duration-300",
+      "interactive": "group relative overflow-hidden bg-white rounded-xl border border-slate-200 hover:border-orange-500/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl",
+      "glass": "bg-white/70 backdrop-blur-xl border border-white/20 shadow-lg"
+    },
+    "inputs": {
+      "base": "h-12 rounded-lg border-slate-200 bg-slate-50 focus:bg-white focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 transition-all font-medium text-slate-900 placeholder:text-slate-400"
+    },
+    "visual_enhancers": {
+      "tracing_beam": "Use for Pricing/Feature cards. A glowing gradient line that travels around the container edge.",
+      "glassmorphism": "Use for sticky headers and floating navs. backdrop-blur-xl + backdrop-saturate-150.",
+      "noise_texture": "Add subtle noise texture to the background of the landing page to kill digital flatness."
+    }
+  },
+  "motion": {
+    "library": "framer-motion",
+    "transitions": {
+      "default": { "duration": 0.3, "ease": "easeInOut" },
+      "spring": { "type": "spring", "stiffness": 200, "damping": 20 },
+      "hover": { "scale": 1.02, "y": -2 }
+    },
+    "animations": {
+      "fadeInUp": {
+        "initial": { "opacity": 0, "y": 20 },
+        "animate": { "opacity": 1, "y": 0 },
+        "exit": { "opacity": 0, "y": -20 }
+      },
+      "stagger": {
+        "container": { "transition": { "staggerChildren": 0.1 } }
+      }
+    }
+  },
+  "accessibility": {
+    "rules": [
+      "Text contrast must meet WCAG AA (4.5:1 for normal, 3:1 for large).",
+      "Interactive elements must have visible focus states (ring-2 ring-offset-2).",
+      "Use aria-labels for icon-only buttons.",
+      "Respect prefers-reduced-motion."
+    ]
+  },
+  "assets": {
+    "icons": {
+      "library": "lucide-react",
+      "style": "Stroke width 1.5px or 2px. Rounded linecaps."
+    },
+    "images": {
+      "avatar_placeholder": "https://images.unsplash.com/photo-1762522926157-bcc04bf0b10a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODh8MHwxfHNlYXJjaHw0fHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdCUyMHBvcnRyYWl0fGVufDB8fHx8MTc3MzM5OTY1MXww&ixlib=rb-4.1.0&q=85",
+      "auth_background": "https://images.unsplash.com/photo-1610741804272-059e1d3c5dba?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODh8MHwxfHNlYXJjaHw0fHxtb2Rlcm4lMjBvZmZpY2UlMjBhYnN0cmFjdCUyMGFyY2hpdGVjdHVyZXxlbnwwfHx8fDE3NzM0MzE1NTN8MA&ixlib=rb-4.1.0&q=85",
+      "logo_inspiration": "https://images.unsplash.com/photo-1770210217380-d78a69acdc77?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwdGVjaCUyMGNvbXBhbnklMjBsb2dvfGVufDB8fHx8MTc3MzQzMTU1NHww&ixlib=rb-4.1.0&q=85"
+    }
+  },
+  "instructions_to_main_agent": [
+    "Install 'framer-motion', 'clsx', 'tailwind-merge' if not present.",
+    "Use 'lucide-react' for all icons.",
+    "Implement the 'Bento Grid' for the Dashboard Home.",
+    "Use the 'Tracing Beam' effect for the 'Recommended Jobs' cards.",
+    "Ensure the Resume Builder uses a Split Screen layout (Form Left, Preview Right).",
+    "Customize Shadcn components to match the 'Professional Spark' palette (Slate 900 primary, Orange 500 accent).",
+    "Use the provided image URLs for placeholders.",
+    "For the Landing Page, use the 'Tetris Grid' layout.",
+    "Apply 'data-testid' to all interactive elements."
+  ],
+  "UNIVERSAL_GUIDELINES": [
+    "Do NOT use 'Inter' for headings. Use 'Plus Jakarta Sans'.",
+    "Do NOT use default Shadcn 'slate' gray. Use the specific 'Professional Spark' palette.",
+    "Ensure 2-3x generous spacing (p-8+) in the Dashboard to reduce clutter.",
+    "Add micro-interactions (hover, focus) to every button and card.",
+    "Use 'sonner' for toasts.",
+    "Export components as named exports.",
+    "Pages must use default exports."
+  ]
+}

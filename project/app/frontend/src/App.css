@@ -1,0 +1,54 @@
+.App {
+  min-height: 100vh;
+}
+
+.auth-background {
+  background: radial-gradient(at 0% 0%, rgba(249, 115, 22, 0.05) 0px, transparent 50%),
+              radial-gradient(at 100% 100%, rgba(59, 130, 246, 0.05) 0px, transparent 50%);
+}
+
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.btn-primary-animate {
+  transition: all 0.2s ease;
+}
+
+.btn-primary-animate:active {
+  transform: scale(0.95);
+}
+
+.sidebar-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.main-content {
+  margin-left: 16rem;
+}
+
+@media (max-width: 768px) {
+  .sidebar-fixed {
+    position: relative;
+    height: auto;
+  }
+  
+  .main-content {
+    margin-left: 0;
+  }
+}
